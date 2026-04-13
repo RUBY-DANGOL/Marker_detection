@@ -143,6 +143,22 @@ targetmatch/
 └── markers/               # Generated ArUco markers (created by generate_markers.py)
 ```
 
+## For raspberry pi 4
+Image detection model can be heavy for raspberry pi so using ncnn model of yolo11 will make the performance of the model better.
+In raspberry pi- 
+- YOLOv8n -> ~2-3 FPS
+- YOLO11n -> ~2.8 FPS
+- YOLO11n (NCNN export)  -> ~8-12 FPS
+#### To convert yolo11n.pt into yolo11n_ncnn_model
+```bash
+pip install ultralytics
+yolo export model=yolo11n.pt format=ncnn imgsz=320
+```
+### If you want the yolo detection and marker detection model and follow people with marker in raspberry pi 
+```bash
+python generate_markers.py
+python  follow.py
+```
 ## License
 
 MIT License
