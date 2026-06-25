@@ -167,8 +167,16 @@ MIT License
 
 For questions or improvements, feel free to modify and extend!
 
+
+
+
+
 ## Demo
-
-
 https://github.com/user-attachments/assets/76db5fde-39f0-45d3-9e58-cf2cb6c3eef4
+
+### Demo after implementation 
+
+
+https://github.com/user-attachments/assets/d70859cc-a4c0-496d-9691-ad901390441a
+
 
